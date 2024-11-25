@@ -1,0 +1,48 @@
+# License for Partitionless (Version 1.0)
+
+This license applies specifically to the project Partitionless. By using this software, you agree to comply with the terms and conditions stated below.
+
+## Copyright Notice
+
+© 2024 Kyrylo Rud. All rights reserved.
+
+## Terms and Conditions
+
+1. **Non-Profit Use**:
+   - Permission is granted to use, copy, modify, and distribute the software for non-commercial, educational, research purposes.
+
+2. **Commercial Use**:
+   - Use of the software for profit-generating activities is prohibited without explicit written permission from the copyright holder.
+
+3. **Private and Proof-of-Concept Use**:
+   - The software may be used internally for private, non-commercial purposes, including proof-of-concept (POC) testing or experimentation, without restrictions.
+
+4. **Attribution**:
+   - Users must retain this license and copyright notice in any copy of the software.
+
+5. **Warranty Disclaimer**:
+   - THIS SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+6. **Liability**:
+   - IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+7. **Scope of License**:
+   - This license applies solely to:
+     - The source files included in this repository, marked with the copyright notice mentioned above.
+     - Any executables, libraries or other binaries built from these source files.
+   - Third-party components, libraries, tools, or dependencies included or referenced (e.g., Docker images, compilers, or external libraries) are governed by their respective licenses and are excluded from the terms of this license.
+   - Build environments, scripts, and configuration files (e.g., Dockerfiles, VS Code configurations) are provided solely for user convenience and are not licensed under this agreement. Users are responsible for compliance with their respective licenses and terms.
+
+8. **Restrictions on Derivative Works and Sub-licensing**:
+   - Any derivative work, project, or software that incorporates this project or substantial portions of its code must also comply with the terms of this license, including but not limited to:
+     - Restricting usage to non-profit purposes unless explicit permission is granted by the copyright holder.
+     - Prohibiting sub-licensing under a different license that permits commercial use without prior authorization from the copyright holder.
+   - Any downstream project that uses this project, whether directly or through other dependent projects, must adhere to these terms.
+
+9. **Attribution Requirement**:
+   - Any project that uses this software, whether directly or indirectly, must include a clear reference to this license and provide a link to the original license file.
+
+## Contact Information
+
+For licensing inquiries or permissions, contact:
+Kyrylo Rud <krud.official@gmail.com>
