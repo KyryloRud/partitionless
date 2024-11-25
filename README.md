@@ -23,6 +23,31 @@ It is source-available and provided under specific conditions:
 
 For more information, refer to the [LICENSE](./LICENSE) file.
 
+## Build
+
+### Visual Studio Code
+
+Project root directory contains `.devcontainer` folder which fully configures developing environment.
+
+Open project directory in VS Code and run following commands:
+
+- Dev Containers: Reopen in Container
+- CMake: Configure
+- CMake: Build
+
+### Command Line
+
+It is recommended to use provided `Dockerfile` from the root of the repository.
+Otherwise, ensure all dependencies specified in the [DEPENDENCIES](./DEPENDENCIES.md) file are installed on the system.
+
+Execute following console commands (in the root of the project) to build the project:
+
+```sh
+mkdir build && cd build
+cmake -S . -B ./build
+cmake --build build/ --parallel $(nproc)
+```
+
 ## Contact
 For inquiries about licensing, collaboration, or other questions, contact:
 Kyrylo Rud <krud.official@gmail.com>
