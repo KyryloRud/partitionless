@@ -13,14 +13,15 @@ Project development is currently based on the [Debian Bookworm](https://www.debi
 
 ## Build Tools
 
-|Name|Version|Comments|URL|
+|Name|Version|Comment|URL|
 |:-|:-:|:-|:-:|
 |Docker|27.2|-|[link](https://docs.docker.com/engine/)|
 |CMake|3.23|-|[link](https://cmake.org)|
 |Clang|14.0|Or other compatible feature set compiler supporting C++23|[link](https://clang.llvm.org)|
+|Clang-Format|14.0|-|[link](https://releases.llvm.org/14.0.0/tools/clang/docs/ClangFormat.html)|
 
 ## Libraries
 
-|Name|Version|Comments|URL|
+|Name|Version|Comment|URL|
 |:-|:-:|:-|:-:|
 |libgtest-dev|1.12|-|[link](https://google.github.io/googletest/)|
