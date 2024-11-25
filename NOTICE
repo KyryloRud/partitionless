@@ -1,0 +1,11 @@
+# NOTICE for Partitionless
+
+This project includes third-party components distributed under their own licenses.
+Below is the information about included components and their respective licenses.
+
+1. **GTest Library** 
+   - URL: https://google.github.io/googletest
+   - License: BSD 3-Clause "New" or "Revised" License
+   - Full license text is available at: https://raw.githubusercontent.com/google/googletest/refs/heads/main/LICENSE
+
+All third-party libraries retain their original copyright and license terms.

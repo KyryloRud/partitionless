@@ -44,8 +44,20 @@ Execute following console commands (in the root of the project) to build the pro
 
 ```sh
 mkdir build && cd build
-cmake -S . -B ./build
+cmake -S . -B build/
 cmake --build build/ --parallel $(nproc)
+```
+
+## Testing
+
+Project is covered with unit tests. To build them, the `BUILD_UNIT_TESTS` option should be set to `ON`.
+After project build, they could be run with `ctest` tool.
+
+```sh
+...
+cmake -DBUILD_UNIT_TESTS=ON -S . -B build/
+cmake --build build/ --parallel $(nproc)
+ctest build/
 ```
 
 ## Contact
