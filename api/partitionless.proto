@@ -1,0 +1,36 @@
+// Copyright (c) 2024 Kyrylo Rud
+// All rights reserved.
+//
+// Licensed under the Partitionless License (Version 1.0).
+// See the LICENSE file in the project root or contact Kyrylo Rud
+// at <krud.official@gmail.com> for details.
+
+syntax = "proto3";
+
+package partitionless;
+
+message authorization_token {
+    int32 version = 1;
+    string client_id = 2;
+    string key = 3;
+    int64 timestamp = 4;
+    string signature = 5;
+}
+
+message register_request {
+  string client_id = 1;
+  string user_id = 2;
+  string user_group = 3;
+}
+
+message error {
+    enum error_type {
+        registration_not_permitted = 0;
+        forbidden_user_id = 1;
+        forbidden_group_id = 2;
+        authentication_token_limit_reached = 3;
+    }
+
+    error_type type = 1;
+    string message = 2;
+}

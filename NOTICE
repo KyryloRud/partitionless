@@ -7,5 +7,12 @@ Below is the information about included components and their respective licenses
    - URL: https://google.github.io/googletest
    - License: BSD 3-Clause "New" or "Revised" License
    - Full license text is available at: https://raw.githubusercontent.com/google/googletest/refs/heads/main/LICENSE
+   - Copyright: Copyright 2008, Google Inc. All rights reserved.
+
+2. **Protocol Buffers (Protobuf)**
+   - URL: https://developers.google.com/protocol-buffers
+   - License: BSD 3-Clause License
+   - Full license text: https://raw.githubusercontent.com/protocolbuffers/protobuf/main/LICENSE
+   - Copyright: Copyright 2008 Google Inc. All rights reserved.
 
 All third-party libraries retain their original copyright and license terms.

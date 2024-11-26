@@ -4,6 +4,7 @@ RUN apt update && \
     apt install -y git \
                    clang \
                    cmake \
+                   protobuf-compiler \
                    libgtest-dev \
                    clang-format && \
     apt autoremove --purge

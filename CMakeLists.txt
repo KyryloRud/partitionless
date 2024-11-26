@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 add_compile_options(-Wall -Wextra -pedantic)
 
+find_package(Protobuf REQUIRED)
 if(BUILD_UNIT_TESTS)
 find_package(GTest REQUIRED)
 include(CTest)
@@ -20,6 +21,7 @@ install(DIRECTORY ${CMAKE_SOURCE_DIR}/include/partitionless TYPE INCLUDE
         DIRECTORY_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE
 )
 
+add_subdirectory(api)
 add_subdirectory(src/lib)
 add_subdirectory(src/cli)
 add_subdirectory(src/daemon)
