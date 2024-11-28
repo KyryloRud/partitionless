@@ -8,7 +8,5 @@
 #include <partitionless/authorization.hpp>
 
 namespace partitionless {
-partitionless::authorization_token authorize(std::string /*client_id*/, uid_t /*user_id*/, gid_t /*group_id*/) {
-  return {};
-}
+partitionless::authorization_token authorize(std::string_view /*client_id*/) { return {}; }
 } // namespace partitionless

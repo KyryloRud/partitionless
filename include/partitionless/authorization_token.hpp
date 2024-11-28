@@ -16,10 +16,10 @@ using token_version_t = std::int32_t;
 using time_point_t = std::chrono::time_point<std::chrono::system_clock>;
 
 struct authorization_token {
-  partitionless::token_version_t version;
-  std::string client_id;
-  std::string key;
-  partitionless::time_point_t timestamp;
-  std::string signature;
+  const partitionless::token_version_t version;
+  const std::string client_id;
+  const std::string key;
+  const partitionless::time_point_t timestamp;
+  const std::string signature;
 };
 } // namespace partitionless

@@ -19,16 +19,14 @@ message authorization_token {
 
 message register_request {
   string client_id = 1;
-  string user_id = 2;
-  string user_group = 3;
+  string signature = 2;
 }
 
 message error {
     enum error_type {
         registration_not_permitted = 0;
-        forbidden_user_id = 1;
-        forbidden_group_id = 2;
-        authentication_token_limit_reached = 3;
+        invalid_signature = 1;
+        authentication_token_limit_reached = 2;
     }
 
     error_type type = 1;

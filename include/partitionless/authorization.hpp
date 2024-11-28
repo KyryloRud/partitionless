@@ -11,5 +11,6 @@
 #include <partitionless/platform.hpp>
 
 namespace partitionless {
-partitionless::authorization_token authorize(std::string client_id, uid_t user_id, gid_t group_id);
+partitionless::authorization_token authorize(std::string_view client_id);
+partitionless::authorization_token authorize(std::string_view client_id, std::string_view signature);
 } // namespace partitionless

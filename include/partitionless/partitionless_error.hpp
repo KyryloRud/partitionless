@@ -12,8 +12,7 @@
 namespace partitionless {
 enum partitionless_error_type {
   registration_not_permitted,
-  forbidden_user_id,
-  forbidden_group_id,
+  invalid_signature,
   authentication_token_limit_reached,
 };
 
