@@ -5,9 +5,12 @@
 // See the LICENSE file in the project root or contact Kyrylo Rud
 // at <krud.official@gmail.com> for details.
 
-#include <gtest/gtest.h>
-#include <partitionless.hpp>
+#pragma once
 
-TEST(partitionless_lib, connect) {
-  EXPECT_NO_THROW({ partitionless::authorize("", 0, 0); });
-}
+#ifdef __linux__
+#include <sys/types.h>
+#else
+#include <cstdint>
+using uid_t = std::uint32_t;
+using gid_t = std::uint32_t;
+#endif
