@@ -9,11 +9,11 @@ syntax = "proto3";
 
 package partitionless.rpc;
 
-service public_gateway {
-  rpc authorize(register_request) returns (authorization_token);
+service PublicGateway {
+  rpc Authorize(AuthorizationRequest) returns (AuthorizationToken);
 }
 
-message authorization_token {
+message AuthorizationToken {
     int32 version = 1;
     string client_id = 2;
     string key = 3;
@@ -21,18 +21,18 @@ message authorization_token {
     string signature = 5;
 }
 
-message register_request {
+message AuthorizationRequest {
   string client_id = 1;
   string signature = 2;
 }
 
-message error {
-    enum error_type {
-        registration_not_permitted = 0;
-        invalid_signature = 1;
-        authentication_token_limit_reached = 2;
+message Error {
+    enum ErrorType {
+        REGISTRATION_NOT_PERMITTED = 0;
+        INVALID_SIGNATURE = 1;
+        AUTHENTICATION_TOKEN_LIMIT_REACHED = 2;
     }
 
-    error_type type = 1;
+    ErrorType type = 1;
     string message = 2;
 }

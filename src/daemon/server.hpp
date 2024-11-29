@@ -11,14 +11,14 @@
 #include <grpcpp/grpcpp.h>
 
 namespace partitionless {
-class server : public partitionless::rpc::public_gateway::Service {
+class server : public partitionless::rpc::PublicGateway::Service {
 public:
   server(std::string address);
   void run();
 
 private:
-  grpc::Status authorize(grpc::ServerContext *context, const partitionless::rpc::register_request *request,
-                         partitionless::rpc::authorization_token *response);
+  grpc::Status authorize(grpc::ServerContext *context, const partitionless::rpc::AuthorizationRequest *request,
+                         partitionless::rpc::AuthorizationToken *response);
 
 private:
   std::unique_ptr<grpc::Server> m_server;

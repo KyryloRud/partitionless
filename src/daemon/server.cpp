@@ -25,8 +25,9 @@ void server::run() {
   std::cout << "server is no longer listening" << std::endl;
 }
 
-grpc::Status server::authorize(grpc::ServerContext * /*context*/, const partitionless::rpc::register_request *request,
-                               partitionless::rpc::authorization_token *response) {
+grpc::Status server::authorize(grpc::ServerContext * /*context*/,
+                               const partitionless::rpc::AuthorizationRequest *request,
+                               partitionless::rpc::AuthorizationToken *response) {
   std::cout << "processing authorization..." << std::endl;
   response->set_version(1);
   response->set_client_id(request->client_id());
