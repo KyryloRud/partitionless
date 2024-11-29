@@ -9,5 +9,5 @@
 #include <partitionless.hpp>
 
 TEST(partitionless_lib, connect) {
-  EXPECT_NO_THROW({ partitionless::authorize(""); });
+  EXPECT_THROW({ partitionless::authorize(""); }, std::runtime_error);
 }

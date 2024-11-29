@@ -5,9 +5,12 @@
 // See the LICENSE file in the project root or contact Kyrylo Rud
 // at <krud.official@gmail.com> for details.
 
+#include "server.hpp"
 #include <iostream>
 
 int main() {
-    std::cout << "partitionlessd" << std::endl;
-    return 0;
+  std::cout << "partitionlessd" << std::endl;
+  auto server = partitionless::server("localhost:3535");
+  server.run();
+  return 0;
 }

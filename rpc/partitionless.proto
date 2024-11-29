@@ -7,7 +7,11 @@
 
 syntax = "proto3";
 
-package partitionless;
+package partitionless.rpc;
+
+service public_gateway {
+  rpc authorize(register_request) returns (authorization_token);
+}
 
 message authorization_token {
     int32 version = 1;

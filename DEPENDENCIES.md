@@ -20,6 +20,7 @@ Project development is currently based on the [Debian Bookworm](https://www.debi
 |Clang|14.0|Or other compatible feature set compiler supporting C++23|[link](https://clang.llvm.org)|
 |Clang-Format|14.0|-|[link](https://releases.llvm.org/14.0.0/tools/clang/docs/ClangFormat.html)|
 |Protobuf-Compiler|3.21|-|[link](https://protobuf.dev)|
+|Protobuf-Compiler-gRPC|1.51|Protobuf compiler plugin|[link](https://www.grpc.io)|
 
 ## Libraries
 
@@ -27,3 +28,4 @@ Project development is currently based on the [Debian Bookworm](https://www.debi
 |:-|:-:|:-|:-:|
 |libgtest-dev|1.12|-|[link](https://google.github.io/googletest/)|
 |libprotobuf-dev|3.21|-|[link](https://protobuf.dev)|
+|libgrpc++-dev|1.51|-|[link](https://www.grpc.io)|

@@ -15,4 +15,13 @@ Below is the information about included components and their respective licenses
    - Full license text: https://raw.githubusercontent.com/protocolbuffers/protobuf/main/LICENSE
    - Copyright: Copyright 2008 Google Inc. All rights reserved.
 
+2. **gRPC – library and framework**
+   - URL: https://developers.google.com/protocol-buffers
+   - Licenses:
+      - Apache License 2.0
+      - BSD 3-Clause License
+      - Mozilla Public License Version 2.0
+   - Full license text: https://raw.githubusercontent.com/grpc/grpc/refs/heads/master/LICENSE
+   - Copyright: Copyright 2016, Google Inc. All rights reserved.
+
 All third-party libraries retain their original copyright and license terms.

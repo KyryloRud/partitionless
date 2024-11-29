@@ -5,6 +5,8 @@ RUN apt update && \
                    clang \
                    cmake \
                    protobuf-compiler \
+                   protobuf-compiler-grpc \
+                   libgrpc++-dev \
                    libgtest-dev \
                    clang-format && \
     apt autoremove --purge

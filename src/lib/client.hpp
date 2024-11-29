@@ -5,13 +5,17 @@
 // See the LICENSE file in the project root or contact Kyrylo Rud
 // at <krud.official@gmail.com> for details.
 
-#include <partitionless/authorization.hpp>
+#pragma once
 
-#include "client.hpp"
+#include <partitionless/authorization_token.hpp>
 
 namespace partitionless {
-partitionless::authorization_token authorize(std::string_view client_id) {
-  auto client = partitionless::client{"localhost:3535"};
-  return client.authorize(client_id);
-}
+class client {
+public:
+  client(std::string address);
+  partitionless::authorization_token authorize(std::string_view client_id);
+
+private:
+  std::string m_address;
+};
 } // namespace partitionless

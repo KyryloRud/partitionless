@@ -3,6 +3,7 @@ set(TARGET_SHORTNAME pl)
 set(TARGET_EXECNAME partitionless)
 
 add_executable(${TARGET} main.cpp)
+target_link_libraries(${TARGET} PUBLIC partitionless)
 add_custom_command(
     TARGET ${TARGET} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E create_symlink ./${TARGET_EXECNAME} ${TARGET_SHORTNAME}
