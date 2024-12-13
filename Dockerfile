@@ -8,5 +8,6 @@ RUN apt update && \
                    protobuf-compiler-grpc \
                    libgrpc++-dev \
                    libgtest-dev \
-                   clang-format && \
+                   clang-format \
+                   libboost-dev && \
     apt autoremove --purge

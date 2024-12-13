@@ -29,3 +29,4 @@ Project development is currently based on the [Debian Bookworm](https://www.debi
 |libgtest-dev|1.12|-|[link](https://google.github.io/googletest/)|
 |libprotobuf-dev|3.21|-|[link](https://protobuf.dev)|
 |libgrpc++-dev|1.51|-|[link](https://www.grpc.io)|
+|libboost-dev|1.74|-|[link](https://www.boost.org)|

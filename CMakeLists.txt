@@ -10,6 +10,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 add_compile_options(-Wall -Wextra -pedantic)
 
+find_package(Boost COMPONENTS REQUIRED)
 find_package(Protobuf REQUIRED)
 find_package(gRPC REQUIRED)
 if(BUILD_UNIT_TESTS)

@@ -15,6 +15,8 @@ class server : public partitionless::rpc::PublicGateway::Service {
 public:
   server(std::string address);
   void run();
+  void pause();
+  void halt();
 
 private:
   grpc::Status authorize(grpc::ServerContext *context, const partitionless::rpc::AuthorizationRequest *request,
