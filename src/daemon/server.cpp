@@ -29,7 +29,7 @@ void server::pause() { std::cout << "server is not processing new events anymore
 
 void server::halt() { m_server->Shutdown(); }
 
-grpc::Status server::authorize(grpc::ServerContext * /*context*/,
+grpc::Status server::Authorize(grpc::ServerContext * /*context*/,
                                const partitionless::rpc::AuthorizationRequest *request,
                                partitionless::rpc::AuthorizationToken *response) {
   std::cout << "processing authorization..." << std::endl;

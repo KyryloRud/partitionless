@@ -19,8 +19,8 @@ public:
   void halt();
 
 private:
-  grpc::Status authorize(grpc::ServerContext *context, const partitionless::rpc::AuthorizationRequest *request,
-                         partitionless::rpc::AuthorizationToken *response);
+  grpc::Status Authorize(grpc::ServerContext *context, const partitionless::rpc::AuthorizationRequest *request,
+                         partitionless::rpc::AuthorizationToken *response) override;
 
 private:
   std::unique_ptr<grpc::Server> m_server;
